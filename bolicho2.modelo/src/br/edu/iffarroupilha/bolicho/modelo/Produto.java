@@ -1,6 +1,7 @@
 package br.edu.iffarroupilha.bolicho.modelo;
 
 public class Produto {
+	
 	private int idProduto;
 	private String descricao;
 	private double preco;
