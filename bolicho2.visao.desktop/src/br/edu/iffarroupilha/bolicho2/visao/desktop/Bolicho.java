@@ -60,7 +60,7 @@ public class Bolicho extends JFrame {
 			
 			public void actionPerformed(ActionEvent arg0) {
 				
-				JOptionPane.showMessageDialog(Bolicho.this, "Cliente");
+				new FrmCliente(Bolicho.this);
 				
 			}
 		});
