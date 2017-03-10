@@ -1,5 +1,7 @@
 package br.edu.iffarroupilha.bolicho2.visao.desktop;
 
+import java.awt.FlowLayout;
+
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -32,11 +34,11 @@ public class FrmCliente extends JFrame {
 
 		JLabel lblCPF = new JLabel("CPF: ");
 		JLabel lblNome = new JLabel("Nome: ");
-		JTextField txtCPF = new JTextField();
-		JTextField txtNome = new JTextField();
+		JTextField txtCPF = new JTextField(30);
+		JTextField txtNome = new JTextField(30);
 		JButton btnGravar = new JButton("Gravar");
 		
-		setLayout( new BoxLayout(this, BoxLayout.PAGE_AXIS));
+		setLayout( new FlowLayout(FlowLayout.LEFT));
 		
 		// adiciona os componentes em tela
 		add(lblCPF);
