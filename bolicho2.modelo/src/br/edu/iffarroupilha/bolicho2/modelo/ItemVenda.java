@@ -1,4 +1,4 @@
-package br.edu.iffarroupilha.bolicho.modelo;
+package br.edu.iffarroupilha.bolicho2.modelo;
 
 public class ItemVenda {
 
