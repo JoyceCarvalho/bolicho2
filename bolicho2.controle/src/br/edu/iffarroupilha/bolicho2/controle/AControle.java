@@ -37,4 +37,12 @@ public abstract class AControle{
 		
 	}
 	
+	public float converteFlutuante(String termo){
+		try {
+			return Float.parseFloat(termo);
+		} catch (Exception e) {
+			return 0;
+		}
+		
+	}
 }

@@ -50,7 +50,7 @@ public class FrmProduto  extends JFrame {
 				// pegar os dados da tela
 				Produto p = new Produto();
 				p.setDescricao(jtfDescricao.getText() );
-				int preco = controle.converteInteiro(jtfPreco.getText());
+				float preco = controle.converteFlutuante(jtfPreco.getText());
 				p.setPreco(preco);
 				
 				// valida os dados
