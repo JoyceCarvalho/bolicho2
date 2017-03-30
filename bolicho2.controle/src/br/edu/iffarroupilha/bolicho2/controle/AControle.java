@@ -21,4 +21,20 @@ public abstract class AControle{
 		
 	}
 	
+	/**
+	 * <p>
+	 * Converte um termo em numero, caso esteja em formato invalido retorna-se zero
+	 * </p>
+	 * @param termo
+	 * @return
+	 */
+	public int converteInteiro(String termo){
+		try {
+			return Integer.parseInt(termo);
+		} catch (Exception e) {
+			return 0;
+		}
+		
+	}
+	
 }

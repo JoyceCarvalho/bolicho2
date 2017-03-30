@@ -69,7 +69,7 @@ public class Bolicho extends JFrame {
 			
 			public void actionPerformed(ActionEvent e) {
 				
-				JOptionPane.showMessageDialog(Bolicho.this, "Produto");
+				new FrmProduto(Bolicho.this);
 				
 			}
 		});
