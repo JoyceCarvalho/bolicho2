@@ -1,16 +1,26 @@
 package br.edu.iffarroupilha.bolicho2.controle;
 
-import java.util.*;
+import java.util.List;
+
+import org.hibernate.Session;
+
+import br.edu.iffarroupilha.bolicho2.modelo.dao.HibernateDao;
 /**
 *<p>
 *Controlador generico que agrupa as funÃ§Ãµes comuns de logicas, como gravar, buscar, etc
 *</p>
 */
 public abstract class AControle{
-	//gravar ou atualizar uma informaÃ§Ã£o em banco
+	//gravar ou atualizar uma informação em banco
 	public void gravar(Object entidade){
-
-
+		
+		// estabelece a conexao
+		Session sessao = HibernateDao.getSessao();
+		// abre uma transação
+		sessao.getTransaction().begin();
+		sessao.saveOrUpdate(entidade);
+		sessao.getTransaction().commit();
+		
 	}
 	//busca todos os registros de uma determinada entidade(classe)
 	public List buscarTodos(Class classe){

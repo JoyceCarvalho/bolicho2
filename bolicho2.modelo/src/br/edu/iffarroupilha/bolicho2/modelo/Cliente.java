@@ -1,8 +1,17 @@
 package br.edu.iffarroupilha.bolicho2.modelo;
 
-public class Cliente {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Cliente {
+	
+	@Id
+	@Column(nullable = false)
 	private int cpf;
+	
+	@Column(length=40, nullable = false)
 	private String nome;
 	
 	
