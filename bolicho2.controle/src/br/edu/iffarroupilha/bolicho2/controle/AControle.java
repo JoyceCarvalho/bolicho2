@@ -37,6 +37,13 @@ public abstract class AControle{
 		
 	}
 	
+	/**
+	 * <p>
+	 * Converte um termo em numero com casas decimais,
+	 *  caso esteja em formato invpalido retorna-se
+	 * zero
+	 * </p>
+	 */
 	public float converteFlutuante(String termo){
 		try {
 			return Float.parseFloat(termo);
