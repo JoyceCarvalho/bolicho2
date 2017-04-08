@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import br.edu.iffarroupilha.bolicho2.modelo.Cliente;
+import br.edu.iffarroupilha.bolicho2.modelo.Produto;
 
 public class HibernateDao {
 	
@@ -15,6 +16,9 @@ public class HibernateDao {
 		// depois adicionar as demais entidades
 		//apos ter feito o mapeamento
 		cfg.addAnnotatedClass(Cliente.class);
+		cfg.configure();
+		
+		cfg.addAnnotatedClass(Produto.class);
 		cfg.configure();
 		
 		// forma mais facil de criar uma fabrica
