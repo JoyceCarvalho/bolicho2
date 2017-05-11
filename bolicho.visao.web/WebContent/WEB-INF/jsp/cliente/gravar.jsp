@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Bulicho Web</title>
+<title>Gravar</title>
 </head>
 <body>
-	<h1>Seja bem vindo ao Bulicho!!!</h1>
-	<a href="cliente/listar"> Clientes </a>
+<h2>Item Gravado com sucesso!!!!</h2>
 </body>
 </html>

@@ -2,6 +2,7 @@ package br.edu.iffarroupilha.bolicho2.controle;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 
 import br.edu.iffarroupilha.bolicho2.modelo.dao.HibernateDao;
@@ -24,7 +25,12 @@ public abstract class AControle{
 	}
 	//busca todos os registros de uma determinada entidade(classe)
 	public List buscarTodos(Class classe){
-		return null;
+		
+		// estabelece a conexao
+		Session sessao = HibernateDao.getSessao();
+		Criteria c = sessao.createCriteria(classe);
+				
+		return c.list();
 	}
 	//excluir entidades
 	public void excluir(Object entidade){
